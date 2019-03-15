@@ -10,7 +10,7 @@ public class DaoClass {
 		ResultSet rs=null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/servlet",
+			 java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/servlet",
 					"root", "temp1234");
 			PreparedStatement ps = con.prepareStatement("select * from login where name=? ");
 			ps.setString(1, name);
