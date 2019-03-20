@@ -8,7 +8,7 @@
 
 		var name = document.forms["Regform"]["uname"];
 		var password = document.forms["Regform"]["password"];
-		var email1 = document.forms["Regform"]["EMail"];
+		var email1 = document.forms["Regform"]["Email"];
 		var dob = document.forms["Regform"]["DOB"];
 
 		if (name.value == "") {
