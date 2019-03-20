@@ -39,7 +39,9 @@ public class login extends HttpServlet {
 				Password = rs.getString(2);
 				if (Name.equalsIgnoreCase(name) && Password.equals(password)) {
 					session.setAttribute("name", name);
-					response.sendRedirect("./Welcome.jsp");
+					request.setAttribute("name", "name");
+					request.getRequestDispatcher("./Welcome.jsp").forward(request, response);
+					//response.sendRedirect("./Welcome.jsp");
 				} else {
 					out.println("Name or Password is incorrect!");
 				}
