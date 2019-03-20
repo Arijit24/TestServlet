@@ -10,7 +10,7 @@
 <body> 
 <%
 String name=request.getParameter("uname");  
-out.print("Welcome "+name);
+out.print("Welcome "+name); 
 %>
  <h1>Enter the main heading, usually the same as the title.</h1>
 <p>Be <b>bold</b> in stating your key points. Put them in a list: </p>

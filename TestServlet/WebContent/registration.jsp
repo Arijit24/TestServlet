@@ -13,7 +13,7 @@
 
 		if (name.value == "") {
 			window.alert("Please provide your name");
-			name.focus();
+			name.focus(); 
 			return false;
 		}
 		if (password.value == "") {

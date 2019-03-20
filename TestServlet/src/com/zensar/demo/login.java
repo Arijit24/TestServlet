@@ -35,7 +35,7 @@ public class login extends HttpServlet {
 		try {
 			flag = rs.next();
 			if (flag == true) {
-				Name = rs.getString(1);
+				Name = rs.getString(1); 
 				Password = rs.getString(2);
 				if (Name.equalsIgnoreCase(name) && Password.equals(password)) {
 					session.setAttribute("name", name);
