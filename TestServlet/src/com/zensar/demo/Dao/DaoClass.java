@@ -10,8 +10,8 @@ public class DaoClass {
 		ResultSet rs=null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			 java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://10.42.204.77:3306/zenHR_Dev",
-					"dashboarduser", "dashboarduser");
+			 java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/zenHR_Dev",
+					"", "");
 			PreparedStatement ps = con.prepareStatement("select * from login where name=? ");
 			ps.setString(1, name);
 			rs = ps.executeQuery();
@@ -25,8 +25,8 @@ public class DaoClass {
 		int row=-1;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://10.42.204.77:3306/zenHR_Dev",
-					"dashboarduser", "dashboarduser");
+			java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/zenHR_Dev",
+					"", "");
 			PreparedStatement ps = con.prepareStatement("insert into login values(?,?,?,?)");
 			ps.setString(1, name);
 			ps.setString(2, password);
